@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.container {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+#card-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#user-img {
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.container h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  transform: translateY(-200%);
+}
+
+.container span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.container h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  transform: translateY(-200%);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+}
+
+.stats h4 {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stats h5 {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-top: 0.4rem;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+#bg-bottom {
+  position: absolute;
+  transform: translate(65%, 60%);
+}
+
+#bg-top {
+  position: absolute;
+  transform: translate(-80%, -50%);
+}
+
+@media screen and (max-width: 375px) {
+  #bg-bottom {
+    position: absolute;
+    transform: translate(70%, 100%);
+  }
+  #bg-top {
+    position: absolute;
+    transform: translate(-30%, -35%);
+  }
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .container {
+    transform: translate(60%, 100%) scale(2);
+    z-index: 10;
+  }
+  .attribution {
+    transform: translate(50%, -500%);
+  }
+}
